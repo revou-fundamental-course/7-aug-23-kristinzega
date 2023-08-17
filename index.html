@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Matematik Segitiga</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Remix Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header/Navbar -->
+    <header>
+      <h1>Kalkulator Matematik Segitiga</h1>
+
+      <nav class="navbar">
+        <a href="#home">Beranda</a>
+        <a href="#triangle-area">Luas Segitiga</a>
+        <a href="#triangle-perimeter">Keliling Segitiga</a>
+      </nav>
+      <div class="nav-hamburger">
+        <a href="#" id="hamburger-menu"><i class="ri-menu-2-fill"></i> </a>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section class="content-section" id="home">
+        <h2>Welcome to Katik🙌</h2>
+        <p>Hai Sobat, Selamat datang di Katik😊</p>
+        <p>
+          Sebuah web apps sederhana yang berfungsi untuk menghitung luas dan
+          keliling segitiga
+        </p>
+
+        <img src="assets/segitiga.png" alt="" />
+
+        <div class="button-content">
+          <a href="#triangle-area">Hitung Luas Segitiga</a>
+          <a href="#triangle-perimeter">Hitung Keliling Segitiga</a>
+        </div>
+      </section>
+
+      <!-- Calculate Triangle Area -->
+      <section class="triangle-area" id="triangle-area">
+        <h3>Luas Segitiga</h3>
+
+        <div class="row">
+          <div class="triangle-image">
+            <img src="assets/segitiga.png" alt="Luas Segitiga" />
+          </div>
+          <div class="content">
+            <p>Rumus Luas Segitiga yaitu:</p>
+            <p><span>L = 1/2 x a x t</span></p>
+            <p>Di mana :</p>
+            <ul>
+              <li>L = Luas</li>
+              <li>a = Panjang alas</li>
+              <li>t = Tinggi</li>
+            </ul>
+          </div>
+          <div class="input-section">
+            <p>Hitung Luas Segitiga</p>
+            <label for="base">Alas Segitiga:</label>
+            <input type="number" id="base" />
+            <label for="height">Tinggi Segitiga:</label>
+            <input type="number" id="height" />
+            <p id="resultArea"></p>
+            <p id="resultArea"></p>
+            <div class="button-input">
+              <button id="calculateArea">Hitung</button>
+              <button id="resetArea">Reset</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Calculate Triangle Perimeter-->
+      <section class="triangle-perimeter" id="triangle-perimeter">
+        <h3>Keliling Segitiga</h3>
+
+        <div class="row">
+          <div class="triangle-img">
+            <img src="assets/rumus-segitiga.png" alt="Keliling Segitiga" />
+          </div>
+          <div class="content">
+            <p>Rumus Keliling Segitiga yaitu:</p>
+            <p><span>K = S1 + S2 + S3</span></p>
+            <p>Di mana :</p>
+            <ul>
+              <li>K = Keliling</li>
+              <li>S1 = Sisi A</li>
+              <li>S2 = Sisi B</li>
+              <li>S3 = Sisi C</li>
+            </ul>
+          </div>
+          <div class="input-section">
+            <p>Hitung Keliling Segitiga</p>
+            <label for="side1">Sisi 1:</label>
+            <input type="number" id="side1" />
+            <label for="side2">Sisi 2:</label>
+            <input type="number" id="side2" />
+            <label for="side3">Sisi 3:</label>
+            <input type="number" id="side3" />
+            <p id="resultPerimeter"></p>
+            <p id="resultPerimeter"></p>
+            <div class="button-input">
+              <button id="calculatePerimeter">Hitung</button>
+              <button id="resetPerimeter">Reset</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="credit">
+        <p>Created by <span>Kristin Zega</span> | &copy; 2023.</p>
+      </div>
+
+      <div class="socials">
+        <a href="#"><i class="ri-instagram-fill"></i></a>
+        <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+        <a href="#"><i class="ri-github-fill"></i></a>
+      </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

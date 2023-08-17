@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Sacramento&family=Work+Sans:wght@100;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar Section */
+header {
+  display: flex;
+  background-color: #a084e8;
+  color: white;
+  padding: 20px 5rem;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+header .navbar {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+header .navbar a {
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.3rem;
+  margin: 1rem;
+}
+
+header .navbar a:hover {
+  color: #6f61c0;
+  text-decoration: underline;
+}
+
+header .navbar a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #a084e8;
+  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transition: 0.2s linear;
+  -webkit-transition: 0.2s linear;
+  -moz-transition: 0.2s linear;
+  -ms-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+}
+
+header .navbar a:hover::after {
+  transform: scaleX(0.5);
+  -webkit-transform: scaleX(0.5);
+  -moz-transform: scaleX(0.5);
+  -ms-transform: scaleX(0.5);
+  -o-transform: scaleX(0.5);
+}
+
+header .nav-hamburger {
+  display: none;
+}
+
+header .nav-hamburger a {
+  color: #fff;
+  margin: 0 0.5rem;
+
+  font-size: 2rem;
+}
+
+header .nav-hamburger a:hover {
+  color: #a084e8;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* Main Section */
+main {
+  margin-top: 4rem;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 6rem 7%;
+}
+
+.content-section h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #6f61c0;
+  margin-bottom: 10px;
+}
+
+.content-section img {
+  width: 40%;
+  margin: 20px;
+}
+
+.button-content {
+  margin-top: 20px;
+  gap: 3rem;
+}
+
+.button-content a {
+  color: white;
+  gap: 3rem;
+  background-color: #6f61c0;
+  border-radius: 20px;
+  margin: 5px 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.button-content a:hover {
+  background-color: #a084e8;
+}
+
+.button-content a:active {
+  transform: translateY(1px);
+  background-color: #6f61c0;
+}
+
+.triangle-area {
+  padding: 8rem 7%;
+}
+
+.triangle-perimeter {
+  padding: 8rem 7%;
+}
+
+.triangle-area h3,
+.triangle-perimeter h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #6f61c0;
+}
+
+.triangle-area .row,
+.triangle-perimeter .row {
+  display: flex;
+  justify-content: center;
+}
+
+.triangle-area .row .triangle-image,
+.triangle-perimeter .row .triangle-img {
+  flex: 1;
+}
+
+.triangle-area .row .triangle-image img {
+  width: 350px;
+}
+
+.triangle-perimeter .row .triangle-img img {
+  width: 250px;
+  padding: 0 2rem;
+}
+
+.triangle-area .row .content,
+.triangle-perimeter .row .content {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.triangle-area .row .content p span,
+.triangle-perimeter .row .content p span {
+  font-weight: bold;
+  color: #6f61c0;
+}
+
+.triangle-area .row .content ul,
+.triangle-perimeter .row .content ul {
+  list-style-type: none;
+}
+
+.triangle-area .row .input-section,
+.triangle-perimeter .row .input-section {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.triangle-area .row .input-section p,
+.triangle-perimeter .row .input-section p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.triangle-area .row .input-section label,
+.triangle-perimeter .row .input-section label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #6f61c0;
+}
+
+.triangle-area .row .input-section input,
+.triangle-perimeter .row .input-section input {
+  padding: 5px;
+  border: 2px solid #d7d0ff;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #6f61c0;
+}
+
+.button-input {
+  margin-top: 10px;
+}
+
+/* Button */
+button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-align: center;
+  border: none;
+  outline: none;
+  background-color: #6f61c0;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a084e8;
+}
+
+button:active {
+  transform: translateY(1px);
+  background-color: #6f61c0;
+}
+
+/* Footer Section */
+footer {
+  background-color: #a084e8;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+footer .credit p {
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+footer .credit span {
+  color: #6f61c0;
+}
+
+footer .socials {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 1rem;
+
+  font-size: 2rem;
+}
+
+footer .socials a:hover {
+  color: #6f61c0;
+}
+
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1200px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  header .nav-hamburger {
+    display: inline-block;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #a084e8;
+    width: 20rem;
+    height: 30vh;
+    border-radius: 0 0 0 10px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+  }
+
+  header .navbar.active {
+    right: 0;
+  }
+
+  header .navbar a {
+    color: white;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  header .navbar a::after {
+    transform-origin: 0 0;
+  }
+
+  header .navbar a:hover::after {
+    transform: scaleX(0.2);
+    -webkit-transform: scaleX(0.2);
+    -moz-transform: scaleX(0.2);
+    -ms-transform: scaleX(0.2);
+    -o-transform: scaleX(0.2);
+  }
+
+  .triangle-area .row,
+  .triangle-perimeter .row {
+    flex-wrap: wrap;
+  }
+}
